@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pea Jay | Home</title>
+    <title>Priyanshi Jain | AI/ML Leader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Pea Jay's Website</h1>
+        <div class="logo">
+            <div class="logo-icon">
+                <div class="initials">PJ</div>
+            </div>
+        </div>
+        <h1>Priyanshi Jain</h1>
+        <p class="tagline">AI | Healthcare | Coffee</p>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -20,22 +32,186 @@
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>This section will contain information about your background, interests, and professional experience.</p>
+        <div class="about-content">
+            <p>I'm Priyanshi Jain, an AI leader with expertise in healthcare. I am the Founder of PrplCrcl, an exclusive community for women's health. I am also serving as AI Scientist in the founding team at RadiantGraph, building voice agents and AI platforms for health plans and services. Previously Lead ML Scientist at Gabbi, where I developed AI solutions for early breast cancer detection with a 47% performance improvement over standard care.</p>
+            
+            <p>Previously, I improved communication for billions of users at Meta and led ML recommender systems at Teladoc Health that achieved a 28% lift in engagement with published clinical outcomes. My work spans building AI platform with machine learning, deep learning, LLMs for healthcare and clinical applications.</p>
+            
+            <p>I hold a Master's degree from Carnegie Mellon University and bring a proven track record of quantifiable impact across organizations - from increasing engagement by double digits to negotiating data acquisition costs down by 92%.</p>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-content">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Founder <span class="founder-badge">Founder</span></h3>
+                    <div class="company-with-logo">
+                        <div class="logo-icon-small logo-purple">
+                            <i class="fas fa-venus"></i>
+                        </div>
+                        <p class="company">PrplCrcl</p>
+                    </div>
+                    <p class="period">Jan 2023 - Present</p>
+                </div>
+                <div class="experience-details">
+                    <p>Created and lead an exclusive women's health community dedicated to empowering women through health education and resources.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>AI Scientist - Founding Team</h3>
+                    <div class="company-with-logo">
+                        <div class="logo-icon-small logo-health">
+                            <i class="fas fa-radiation"></i>
+                        </div>
+                        <p class="company">RadiantGraph</p>
+                    </div>
+                    <p class="period">Jun 2024 - Present</p>
+                </div>
+                <div class="experience-details">
+                    <p>Building voice agents and AI platforms for health plans and services, focused on improving patient experiences and outcomes.</p>
+                    <p>Developed Contextual Multi-Armed Bandits product with significant client conversion.</p>
+                    <p>Designed core AI platform functionality and data warehouse architecture.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Lead ML Scientist</h3>
+                    <div class="company-with-logo">
+                        <div class="logo-icon-small logo-health">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <p class="company">Gabbi</p>
+                    </div>
+                    <p class="period">Mar 2023 - May 2024</p>
+                </div>
+                <div class="experience-details">
+                    <p>Led AI development for early breast cancer detection, achieving 47% performance improvement over standard care.</p>
+                    <p>Published research in the American Association for Cancer Research Journal.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Data Scientist</h3>
+                    <div class="company-with-logo">
+                        <div class="logo-icon-small logo-tech">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <p class="company">Meta</p>
+                    </div>
+                    <p class="period">May 2022 - Jan 2023</p>
+                </div>
+                <div class="experience-details">
+                    <p>Improved communication DAU for billions of users via Recommenders in private sharing.</p>
+                    <p>Increased FB sessions by 8% through real-time content ranking model improvements.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Senior ML Scientist</h3>
+                    <div class="company-with-logo">
+                        <div class="logo-icon-small logo-health">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <p class="company">Livongo (Teladoc Health)</p>
+                    </div>
+                    <p class="period">Aug 2019 - May 2022</p>
+                </div>
+                <div class="experience-details">
+                    <p>Led ML Recommender pipelines that achieved 28% lift in engagement with published clinical outcomes.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>This section will showcase your projects, including your work in AI, and health.</p>
+        <div class="portfolio-content">
+            <div class="portfolio-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-comment-medical"></i>
+                </div>
+                <h3>Health Plan AI Platform</h3>
+                <p>Building voice agents for healthcare services to improve patient experiences</p>
+                <p>Developed Contextual Multi-Armed Bandits product at RadiantGraph with significant client conversion</p>
+                <p>Designed core AI platform functionality and data warehouse architecture</p>
+            </div>
+            <div class="portfolio-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Healthcare AI</h3>
+                <p>Early breast cancer detection models with 47% performance improvement</p>
+                <p>Published research in American Association for Cancer Research Journal</p>
+            </div>
+            <div class="portfolio-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Recommender Systems</h3>
+                <p>Health Action Recommender with clinical outcomes published in Annals of Behavioral Medicine</p>
+                <p>Meta communication recommenders improving FB sessions by 8%</p>
+            </div>
+            <div class="portfolio-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h3>ML Research</h3>
+                <p>ChatGPT Google Sheets Plugin for strategic recommendations</p>
+                <p>Epileptic seizure prediction from EEG data at CMU</p>
+            </div>
+        </div>
+    </section>
+    <section id="publications">
+        <h2>Publications & Presentations</h2>
+        <div class="publications-content">
+            <div class="publication-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Research Publication</h3>
+                <p>Featured in the American Association for Cancer Research Journal (Feb 2024)</p>
+            </div>
+            <div class="publication-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Clinical Outcomes</h3>
+                <p>Published in Annals of Behavioral Medicine (Mar 2022)</p>
+            </div>
+            <div class="publication-item">
+                <div class="item-icon animated-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Conference Presentation</h3>
+                <p>Presented research at AACR'23 conference (Apr 2023), leading to collaborations with Dana Farber & Mayo researchers</p>
+            </div>
+        </div>
     </section>
     <section id="blog">
         <h2>Blog</h2>
-        <p>This section will link to your latest blog posts or articles.</p>
+        <div class="blog-content">
+            <div class="item-icon blog-icon animated-icon">
+                <i class="fas fa-pen-fancy"></i>
+            </div>
+            <p>Stay tuned for my latest thoughts and insights on AI, healthcare technology, and data science.</p>
+        </div>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Details on how to contact you via email, LinkedIn, or other social media.</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:pjain2@alumni.cmu.edu">pjain2@alumni.cmu.edu</a> | <a href="mailto:priyanshij.12@gmail.com">priyanshij.12@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Location: SF Bay Area</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
     </section>
     <footer>
-        <p>Copyright &copy; 2023 Pea Jay. All rights reserved.</p>
+        <p>Copyright &copy; 2025 Priyanshi Jain. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
