@@ -1,31 +1,280 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* Color Palette */
+:root {
+    --burgundy: #4A0404;
+    --burgundy-light: #6B0F0F;
+    --burgundy-dark: #2D0202;
+    --text-color: #2D3047;
+    --background-color: #FFFFFF;
+    --section-bg: #FFFFFF;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
 }
 
-header, footer {
-    background-color: #333;
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--burgundy);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--burgundy);
+    margin: 0.3rem auto;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--burgundy);
+    margin-bottom: 0.3rem;
+}
+
+/* Header */
+header {
+    background: var(--burgundy);
     color: white;
-    padding: 1em;
+    padding: 2.5rem 2rem;
     text-align: center;
 }
 
+.tagline {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+/* Contact Info in Header */
+.contact-info {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.email-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.separator {
+    color: white;
+    opacity: 0.5;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    font-size: 0.9rem;
+    }
+
+.contact-info a:hover {
+    opacity: 0.8;
+    }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.2rem 0.6rem;
+    transition: var(--transition);
 }
 
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sections */
 section {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-a {
-    color: #0077cc;
+section:nth-child(even) {
+    background-color: var(--section-bg);
+}
+
+/* Experience Section */
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.experience-header {
+    margin-bottom: 0.5rem;
+}
+
+.role-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.company {
+    color: var(--burgundy);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.2rem 0;
+}
+
+.period {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.role-description {
+    margin-top: 0.8rem;
+    padding-left: 1.2rem;
+}
+
+.role-description li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.role-description li:first-child {
+    list-style-type: none;
+    margin-left: -1.2rem;
+}
+
+/* Portfolio Section */
+.portfolio-content {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.portfolio-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Publications Section */
+.publications-content {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.publication-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Footer */
+footer {
+    background: var(--burgundy);
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+}
+
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    .experience-content, .portfolio-content, .publications-content {
+        grid-template-columns: 1fr;
+    }
 }
