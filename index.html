@@ -10,125 +10,170 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Priyanshi Jain</h1>
-        <p class="tagline">AI | Healthcare | Coffee</p>
-        <div class="contact-info">
-            <div class="email-links">
-                <a href="mailto:pjain2@alumni.cmu.edu">pjain2@alumni.cmu.edu</a>
-                <span class="separator">|</span>
-                <a href="mailto:priyanshijain@gmail.com">priyanshijain@gmail.com</a>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/peajay/" class="social-link">LinkedIn</a>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="main-title">Priyanshi Jain</h1>
+            <p class="tagline">AI | Healthcare | Coffee ☕</p>
+            <div class="contact-info">
+                <div class="email-links">
+                    <a href="mailto:pjain2@alumni.cmu.edu">pjain2@alumni.cmu.edu</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:priyanshij.12@gmail.com">priyanshij.12@gmail.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/peajay/" class="social-link">LinkedIn</a>
+                </div>
             </div>
         </div>
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="#portfolio">Projects & Publications</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About</h2>
+    <main class="main-content">
+        <section id="about" class="section">
+            <h2 class="section-title">About</h2>
             <div class="about-content">
-                <p>Staff AI Scientist at RadiantGraph leading growth marketing personalization platforms. Founder of PrplCrcl, building an exclusive women's health community. Previously led AI development at Gabbi achieving 47% performance improvement in breast cancer detection, improved communication for billions at Meta, and delivered 28% engagement lift at Teladoc Health. MS from Carnegie Mellon University.</p>
+                <p class="about-text">AI innovator by day, healthcare enthusiast by night, turning coffee into code since 2015 ☕. Currently revolutionizing growth marketing at RadiantGraph while building PrplCrcl to empower women's health decisions. Previously made waves with 47% more accurate breast cancer detection at Gabbi, scaled communication for billions at Meta, and delivered 28% engagement lift at Teladoc Health. MS from Carnegie Mellon University, where I learned that the best AI solutions come with a side of human empathy.</p>
             </div>
         </section>
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
             <div class="experience-content">
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Staff AI Scientist</h3>
+                        <h3 class="role-title">Staff AI Scientist</h3>
                         <p class="company">RadiantGraph</p>
                         <p class="period">Jun 2024 - Present</p>
                     </div>
-                    <p>Leading AI platform for growth marketing personalization. Architected E2E platform with configurable client AI ops, voice/video agents, and contextual multi-armed bandits for user acquisition.</p>
+                    <ul class="role-description">
+                        <li>Leading Platform product development for growth marketing personalisation via AI - content generation, cohorts, voice agents</li>
+                        <li>Architected end-to-end core platform to support configurable client AI ops</li>
+                        <li>Conducted R&D for voice AI agents and video AI agents for health services</li>
+                        <li>Developed contextual multi-armed bandit solution for user acquisition</li>
+                    </ul>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Founder <span class="founder-badge">Founder</span></h3>
+                        <h3 class="role-title">Founder <span class="founder-badge">Founder</span></h3>
                         <p class="company">PrplCrcl</p>
                         <p class="period">Oct 2024 - Present</p>
                     </div>
-                    <p>Building exclusive women's health community to support equity in health research and curb misinformation.</p>
+                    <ul class="role-description">
+                        <li>Building exclusive women's health community to support equity in health research</li>
+                        <li>Focused on curbing misinformation and enabling informed health decisions</li>
+                    </ul>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Lead AI Scientist</h3>
+                        <h3 class="role-title">Lead AI Scientist</h3>
                         <p class="company">Gabbi</p>
                         <p class="period">Mar 2023 - May 2024</p>
                     </div>
-                    <p>Led AI development for early breast cancer detection with 47% performance improvement over standard care. Published in AACR Journal, presented at AACR'23.</p>
+                    <ul class="role-description">
+                        <li>Led AI development for early breast cancer detection, risk factor discovery, and business growth at seed stage</li>
+                        <li>Developed Risk Assessment Model with 47% performance improvement for all demographics</li>
+                        <li>Published in AACR Journal and presented at AACR'23</li>
+                        <li>Spearheaded validation study advised by Dr. Khan (NCCN panel member)</li>
+                    </ul>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Data Scientist</h3>
+                        <h3 class="role-title">Data Scientist</h3>
                         <p class="company">Meta</p>
                         <p class="period">May 2022 - Jan 2023</p>
                     </div>
-                    <p>Improved communication for 1B+ users via Recommenders. Increased FB sessions by 8% through real-time content ranking.</p>
+                    <ul class="role-description">
+                        <li>Improved communication DAU for a billion users via Recommenders in private sharing</li>
+                        <li>Increased FB sessions by 8% through real-time content ranking</li>
+                        <li>Deployed experimentation & measurement for community chats, achieving 65% activation</li>
+                        <li>Devised AI strategy and approved 15+ launches to improve recommendation diversity</li>
+                    </ul>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Senior AI Scientist</h3>
+                        <h3 class="role-title">Senior AI Scientist</h3>
                         <p class="company">Livongo (Teladoc Health)</p>
                         <p class="period">Aug 2019 - May 2022</p>
                     </div>
-                    <p>Led ML Recommender pipelines achieving 28% engagement lift with published clinical outcomes. Increased revenue by 20% through strategic insights.</p>
+                    <ul class="role-description">
+                        <li>Technical Lead for ML Recommender pipelines and Experimentation</li>
+                        <li>Health Action Recommender achieved 28% lift in engagement with published clinical outcomes in Annals of Behavioral Medicine'22</li>
+                        <li>Developed Bayesian Personalized Ranking model for clinically optimal actions</li>
+                        <li>Increased revenue by 20% through strategic insights</li>
+                    </ul>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Data Scientist</h3>
-                        <p class="company">ZS Associates</p>
-                        <p class="period">Jun 2018 - Jul 2019</p>
+                        <h3 class="role-title">Data Scientist</h3>
+                        <p class="company">Auton Lab, School of Computer Science, CMU</p>
+                        <p class="period">Jan 2019 - May 2019</p>
                     </div>
-                    <p>Developed predictive models for pharmaceutical sales forecasting. Implemented machine learning solutions for client analytics, improving forecast accuracy by 25%.</p>
+                    <ul class="role-description">
+                        <li>Research with Prof. Artur Dubrawski to improve heart transplant success rate by predicting outcomes of donor recipient pair</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="role-title">Associate</h3>
+                        <p class="company">ZS Associates</p>
+                        <p class="period">Jul 2015 - Apr 2018</p>
+                    </div>
+                    <ul class="role-description">
+                        <li>Product lead of team of 6 that developed and deployed BI and Analytics solutions for a top US pharma company</li>
+                        <li>Designed & developed product insights & forecast for entire product portfolio</li>
+                        <li>Saved $220k/year by targeting high-value physicians</li>
+                        <li>Led firm initiative to cut manual effort by 82% with Robotic Process Automation</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+        <section id="portfolio" class="section">
+            <h2 class="section-title">Projects & Publications</h2>
             <div class="portfolio-content">
                 <div class="portfolio-item">
-                    <h3>Health Plan AI Platform</h3>
-                    <p>Building voice agents for healthcare services. Developed Contextual Multi-Armed Bandits product with significant client conversion.</p>
+                    <h3 class="portfolio-title">Health Plan AI Platform</h3>
+                    <ul class="portfolio-description">
+                        <li>Building voice agents for healthcare services</li>
+                        <li>Developed Contextual Multi-Armed Bandits product with significant client conversion</li>
+                    </ul>
                 </div>
                 <div class="portfolio-item">
-                    <h3>Healthcare AI</h3>
-                    <p>Early breast cancer detection models with 47% performance improvement. Published in AACR Journal.</p>
+                    <h3 class="portfolio-title">Healthcare AI</h3>
+                    <ul class="portfolio-description">
+                        <li>Early breast cancer detection models with 47% performance improvement</li>
+                        <li>Published in <a href="https://aacrjournals.org/cancerres/article/84/3_Supplement_1/B080/733244/Abstract-B080-Advancing-Breast-Cancer-Risk" target="_blank">AACR Journal</a> (Feb 2024)</li>
+                    </ul>
                 </div>
                 <div class="portfolio-item">
-                    <h3>Recommender Systems</h3>
-                    <p>Health Action Recommender with clinical outcomes. Meta communication recommenders improving FB sessions by 8%.</p>
+                    <h3 class="portfolio-title">Recommender Systems</h3>
+                    <ul class="portfolio-description">
+                        <li>Health Action Recommender with clinical outcomes published in <a href="https://academic.oup.com/abm/article/56/Supplement_1/S1/6572209?login=false" target="_blank">Annals of Behavioral Medicine</a> (Mar 2022)</li>
+                        <li>Meta communication recommenders improving FB sessions by 8%</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="publications-content">
-                <div class="publication-item">
-                    <h3>Research Publication</h3>
-                    <p>American Association for Cancer Research Journal (Feb 2024)</p>
+                <div class="portfolio-item">
+                    <h3 class="portfolio-title">Epileptic Seizure Detection</h3>
+                    <ul class="portfolio-description">
+                        <li>CMU research project advised by Prof. Artur Dubrawski</li>
+                        <li>Predicted seizures 24 seconds before occurrence to alert the patient's doctor and family</li>
+                    </ul>
                 </div>
-                <div class="publication-item">
-                    <h3>Clinical Outcomes</h3>
-                    <p>Annals of Behavioral Medicine (Mar 2022)</p>
-                </div>
-                <div class="publication-item">
-                    <h3>Conference Presentation</h3>
-                    <p>AACR'23 conference (Apr 2023), collaborations with Dana Farber & Mayo researchers</p>
+                <div class="portfolio-item">
+                    <h3 class="portfolio-title">Conference Presentations</h3>
+                    <ul class="portfolio-description">
+                        <li>Presented at <a href="https://www.aacr.org/meeting/aacr-annual-meeting-2023/" target="_blank">AACR'23</a> conference (Apr 2023)</li>
+                        <li>Featured collaborations with Dana Farber & Mayo researchers</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright &copy; 2025 Priyanshi Jain. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>Copyright &copy; 2025 Priyanshi Jain. All rights reserved. Made with ☕ and ❤️</p>
     </footer>
 </body>
 </html>
