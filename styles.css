@@ -1,6 +1,6 @@
 /* Color Palette */
 :root {
-    --burgundy: #4A0404;
+    --burgundy: #3A0303;
     --burgundy-light: #6B0F0F;
     --burgundy-dark: #2D0202;
     --text-color: #2D3047;
@@ -20,8 +20,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: white;
+    background-color: var(--burgundy);
 }
 
 /* Typography */
@@ -41,7 +41,7 @@ h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    color: var(--burgundy);
+    color: white;
     position: relative;
 }
 
@@ -50,13 +50,13 @@ h2::after {
     display: block;
     width: 40px;
     height: 2px;
-    background: var(--burgundy);
+    background: white;
     margin: 0.3rem auto;
 }
 
 h3 {
     font-size: 1.1rem;
-    color: var(--burgundy);
+    color: white;
     margin-bottom: 0.3rem;
 }
 
@@ -155,12 +155,110 @@ main {
 
 /* Sections */
 section {
-    padding: 3rem 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--burgundy);
 }
 
 section:nth-child(even) {
-    background-color: var(--section-bg);
+    background-color: var(--burgundy);
+}
+
+/* Blog Section */
+.blog-intro {
+    margin-bottom: 2rem;
+}
+
+.blog-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-post-item {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    background: var(--burgundy-dark);
+    border-radius: 4px;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+a.blog-post-link {
+    cursor: pointer;
+}
+
+a.blog-post-link:hover {
+    background: var(--burgundy-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.post-date {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.post-excerpt {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    white-space: pre-line;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Post Page Styles */
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-page-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.post-page-title::after {
+    display: none;
+}
+
+.post-body {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+}
+
+.post-body p {
+    margin-bottom: 1.5rem;
 }
 
 /* Experience Section */
@@ -172,7 +270,7 @@ section:nth-child(even) {
 .experience-item {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .experience-item:last-child {
@@ -188,18 +286,19 @@ section:nth-child(even) {
 .role-title {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: white;
 }
 
 .company {
-    color: var(--burgundy);
+    color: white;
     font-size: 1rem;
     font-weight: 500;
     margin: 0.2rem 0;
+    opacity: 0.9;
 }
 
 .period {
-    color: #666;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
     font-style: italic;
 }
@@ -227,7 +326,7 @@ section:nth-child(even) {
 }
 
 .portfolio-item {
-    background: white;
+    background: var(--burgundy-dark);
     padding: 1rem;
     border-radius: 4px;
     box-shadow: var(--card-shadow);
@@ -241,7 +340,7 @@ section:nth-child(even) {
 }
 
 .publication-item {
-    background: white;
+    background: var(--burgundy-dark);
     padding: 1rem;
     border-radius: 4px;
     box-shadow: var(--card-shadow);
