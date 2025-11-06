@@ -4,8 +4,17 @@ const blogPosts = [
     {
         title: "Important",
         url: "important.html",
-        excerpt: "I must feel important. I must tell myself a narrative at all times. I must weave meaning into everything that happens to and from me. I am not living my life on autopilot, no sir. That, is banal, bizarre and suboptimal..."
+        excerpt: "I must feel important."
     },
+    {
+        title: "Will you be my Valentine?",
+        url: "valentine.html",
+        excerpt: "Roses are dead"
+    },
+    {
+        title: "War: What is it good for?",
+        url: "war.html",
+        excerpt: "Inexperienced and naive, a person writes words about war." },
     // Example post structure:
     // {
     //     title: "Post Title", // Optional - omit for no title
