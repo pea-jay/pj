@@ -11,10 +11,6 @@ const blogPosts = [
         url: "valentine.html",
         excerpt: "Roses are dead"
     },
-    {
-        title: "War: What is it good for?",
-        url: "war.html",
-        excerpt: "Inexperienced and naive, a person writes words about war." },
     // Example post structure:
     // {
     //     title: "Post Title", // Optional - omit for no title
