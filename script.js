@@ -11,6 +11,11 @@ const blogPosts = [
         url: "valentine.html",
         excerpt: "Roses are dead"
     },
+    {
+        title: "The Ocean Tried to Kill Me",
+        url: "ocean.html",
+        excerpt: "I feel terror."
+    },
     // Example post structure:
     // {
     //     title: "Post Title", // Optional - omit for no title
